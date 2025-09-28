@@ -1,0 +1,155 @@
+/* General Body */
+body {
+  background-color: #E5F3FD;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* About Me Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  padding: 0 50px;
+}
+
+.profile-pic {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 90px;
+}
+
+.profile-text {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 50px;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.projects-section .subheading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Row of project cards */
+.projects-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Individual project card */
+.project-card {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Image container for hover overlay */
+.project-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Project image */
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.project-image-container:hover .project-image {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Project description */
+.project-description {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.project-description a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.youtube-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.youtube-card {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.youtube-card a {
+  display: block;
+  width: 100%;
+  max-width: 300px; /* keeps it same size as project images */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.youtube-card a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.youtube-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
