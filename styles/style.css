@@ -1,11 +1,11 @@
-/* General Body */
+
 body {
   background-color: #E5F3FD;
   margin: 0;
   font-family: 'DM Sans', sans-serif;
 }
 
-/* About Me Section */
+
 .profile-section {
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@ body {
   line-height: 1.6;
 }
 
-/* Projects Section */
+
 .projects-section {
   padding: 50px;
 }
@@ -38,21 +38,16 @@ body {
   text-align: left;
 }
 
-.projects-section .subheading {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 20px;
-  text-align: left;
-}
 
-/* Row of project cards */
+
+
 .projects-row {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
 
-/* Individual project card */
+
 .project-card {
   flex: 1 1 300px;
   display: flex;
@@ -61,7 +56,7 @@ body {
   text-align: center;
 }
 
-/* Image container for hover overlay */
+
 .project-image-container {
   position: relative;
   width: 100%;
@@ -70,7 +65,7 @@ body {
   overflow: hidden;
 }
 
-/* Project image */
+
 .project-image {
   width: 100%;
   height: auto;
@@ -83,7 +78,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Overlay */
+
 .overlay {
   position: absolute;
   top: 0;
@@ -109,7 +104,7 @@ body {
   text-align: center;
 }
 
-/* Project description */
+
 .project-description {
   font-size: 1rem;
   margin-top: 10px;
@@ -136,7 +131,7 @@ body {
 .youtube-card a {
   display: block;
   width: 100%;
-  max-width: 300px; /* keeps it same size as project images */
+  max-width: 300px; 
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -152,4 +147,71 @@ body {
   height: auto;
   display: block;
   object-fit: cover;
+}
+
+a .fa-github {
+  color: black; 
+  font-size: 40px;
+  text-decoration: none; 
+}
+
+a .fa-github:hover {
+  color: #4078c0; 
+}
+
+a .fa-linkedin-in {
+  color: black; 
+  font-size: 30px;
+}
+
+a .fa-linkedin-in:hover {
+  color: #0a66c2; 
+}
+
+a .fa-brands {
+  margin: 0 15px; 
+  font-size: 30px;
+  color: black;
+}
+
+a .fa-brands:hover {
+  color: #0a66c2; 
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px; 
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.skills-section {
+  padding: 50px;
+}
+
+.skills-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.skills-section ul {
+  list-style: none;   
+  padding: 0;
+}
+
+.skills-section li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.skills-section i {
+  font-size: 60px; 
+  margin: 15px;    
+  color: black;    
 }
